@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Input {
+    string value = 1;
+}
+
+message Output {
+    string value = 1;
+}
+
+service MLflow {
+    rpc predict(Input) returns (Output) {}
+}
